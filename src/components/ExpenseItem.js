@@ -1,7 +1,8 @@
 import { ReactDOM } from "react";
+import './ExpenseItem.css'
 const ExpenseItem=()=>{
 return(
-    <div>
+    <div className="">
         <h1>This is Expense</h1>
     </div>
 )
