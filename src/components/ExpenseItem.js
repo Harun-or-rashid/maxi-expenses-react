@@ -1,12 +1,13 @@
 import { ReactDOM } from "react";
 import './ExpenseItem.css'
-const ExpenseItem=()=>{
+const ExpenseItem=(props)=>{
+    // const month=
 return(
     <div className="expense-item">
-        <div>May 10th 2022</div>
+        <div>{props.date.toISOString()}</div>
         <div className="expense-item__description">
-            <h2>Car Insurance</h2>
-            <div className="expense-item__price">120.44$</div>
+            <h2>{props.title}</h2>
+            <div className="expense-item__price">{props.amount}</div>
         </div>
     </div>
 )
