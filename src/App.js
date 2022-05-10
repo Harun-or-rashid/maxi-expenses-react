@@ -8,10 +8,20 @@ function App() {
     id:'ex1',
     title:'Bike insurance',
     amount:'129.2',
-    date: new Date(2022,2,2)
+    date: new Date(2022,2,23)
    },
-    { id:'ex2',title:'House Rent',amount:'129.2',date: new Date(2022,2,2) },
-    { id:'ex3',title:'Snacks Bill',amount:'877.2',date: new Date(2022,2,2) }
+    { 
+    id:'ex2',
+    title:'House Rent',
+    amount:'129.2',
+    date: new Date(2022,2,20) 
+  },
+  { 
+    id:'ex3',
+    title:'Snacks Bill',
+    amount:'877.2',
+    date: new Date(2022,2,21) 
+  }
 
   ];
   return (
@@ -31,7 +41,6 @@ function App() {
       amount={expense[2].amount}
       date={expense[2].date}
       ></ExpenseItem>
-      {/* <ExpenseItem></ExpenseItem> */}
 
     </div>
   );
