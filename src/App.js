@@ -4,6 +4,7 @@ import './components/ExpenseItem.css'
 import ExpenseItem from './components/ExpenseItem';
 import Card from './components/Card';
 import Expense from './components/Expense';
+import NewExpense from './components/NewExpense';
 // import Expense from './components/Expense';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
   ];
   return (
     <div>  
+      <NewExpense></NewExpense>
        <Expense items={expense}></Expense>
     </div>
   );
